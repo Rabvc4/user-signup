@@ -28,7 +28,7 @@ def submit():
         username_error = "That's not a valid username"
     if (email == ""):
         email_error = ""
-    elif not ("@" and "." in email):
+    elif not ("@." in email):
         email_error = "Not a valid email address"
 
     if (username_error or password_error or verify_error or email_error):
